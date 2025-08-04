@@ -1,224 +1,1402 @@
 <!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Naif Alkhunaizi Page</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<html lang="en">
+<head>
+    <title>Naif Alkhunaizi - Senior AI & Data Consultant</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Senior AI & Data Consultant specializing in AI strategy, implementation, and transformative solutions for enterprise clients." />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            /* Colors - Sophisticated Purple & Teal Palette */
+            --primary: #6366F1;
+            --primary-dark: #4338CA;
+            --primary-light: #8B5CF6;
+            --secondary: #64748B;
+            --accent: #14B8A6;
+            --success: #10B981;
+            --warning: #F59E0B;
+            --error: #EF4444;
+            
+            /* Neutrals */
+            --white: #FFFFFF;
+            --gray-50: #F8FAFC;
+            --gray-100: #F1F5F9;
+            --gray-200: #E2E8F0;
+            --gray-300: #CBD5E1;
+            --gray-400: #94A3B8;
+            --gray-500: #64748B;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1E293B;
+            --gray-900: #0F172A;
+            
+            /* Typography */
+            --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+            
+            /* Shadows */
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            
+            /* Spacing */
+            --space-xs: 0.5rem;
+            --space-sm: 0.75rem;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            --space-2xl: 3rem;
+            --space-3xl: 4rem;
+            --space-4xl: 6rem;
+            
+            /* Border Radius */
+            --radius-sm: 0.375rem;
+            --radius: 0.5rem;
+            --radius-md: 0.75rem;
+            --radius-lg: 1rem;
+            --radius-xl: 1.5rem;
+            --radius-2xl: 2rem;
+            --radius-full: 9999px;
+            
+            /* Transitions */
+            --transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>Naif Tayseer Alkhunaizi</h1>
-						<p style="margin-bottom:0;"> Research Assistant in Machine Learning at</p>
-						<p>Mohamed bin Zayed University of Artificial Intelligence </p>	
-										</p>
-						
-					</header>
+        html {
+            scroll-behavior: smooth;
+        }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">About Me</a></li>
-							<!-- <li><a href="#second">Papers and Publications</a></li> -->
-							<li><a href="#first">Publications</a></li>
-							<li><a href="#cta">CV</a></li>
-							
-						</ul>
-					</nav>
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            color: var(--gray-700);
+            background: var(--gray-50);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
 
-				<!-- Main -->
-					<div id="main">
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-xl);
+        }
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>About Me</h2>
-										</header>
-										<p style="text-align: justify;">
-										My name is Naif Alkhunaizi, and I am a researcher in Artificial Intelligence and Machine Learning. I graduated with a Master's degree from Mohamed bin Zayed University of Artificial Intelligence, the world's first AI university specializing in Machine Learning. Currently, I am working as a researcher, where I continue to develop my skills and knowledge in the field of AI.
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 var(--space-lg);
+            }
+        }
 
-										My research interests are primarily focused on Federated Learning, Privacy-Preserving Machine Learning, and Computer Vision. I am passionate about using AI to solve real-world problems and exploring the potential of AI in various fields, including healthcare.
-										
-										</p>
-										<!-- <ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul> -->
-									</div>
-									<span class="image"><img src="images/naif_1.jpg" alt="" /></span>
-								</div>
-							</section>
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 30%, #3730a3 60%, #0f172a 100%);
+            color: var(--white);
+            padding: var(--space-4xl) 0;
+            position: relative;
+            overflow: hidden;
+        }
 
-						<!-- First Section -->
-							<!-- <section id="first" class="main special">
-								<header class="major">
-									<h2>Research Projects</h2>
-								</header> -->
-								<!-- <ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Ipsum consequat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>Amed sed feugiat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-								</ul> -->
-								<!-- <footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer> -->
-							<!-- </section> -->
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 80%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 50%);
+        }
 
-						<!-- Second Section -->
-							<!-- <section id="second" class="main special"> -->
-								<!-- <header class="major"> -->
-									<!-- <h2>Papers and Publications</h2> -->
-									<!-- <p> 
-									</p>
-								</header> -->
-								<!-- <ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-code-branch"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon solid fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<strong>1,024</strong> Nullam
-									</li>
-								</ul> -->
-								<p> </p>
-								<!-- <footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer> -->
-							</section>
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>Publications</h2>
-								</header>
-								<ul>
-									<li>
-									  <div class="publication">
-										<a href = "https://arxiv.org/pdf/2306.14638.pdf" style="text-decoration: underline;"> 
-										<h3 style="text-align: left;">FeSViBS: Federated Split Learning of Vision Transformer with Block Sampling (MICCAI 2023)</h3>
-										</a>
-									  </div>
-									</li>
-								  
-									<li>
-									  <div class="publication">
-										<a href = "https://github.com/Naiftt/FedSIS" style="text-decoration: underline;"> 
-										<h3 style="text-align: left;">FedSIS: Federated Split Learning with Intermediate Representation Sampling for Privacy-preserving Generalized Face Presentation Attack Detection (IEEE IJCB 2023)</h3>
-										</a>
-									  </div>
-									</li>
-								  
-									<li>
-									  <div class="publication">
-										<a href="https://link.springer.com/chapter/10.1007/978-3-031-16452-1_64" style="text-decoration: underline;">
-										<h3 style="text-align: left;">Suppressing Poisoning Attacks on Federated Learning for Medical Imaging (MICCAI 2022)</h3>
-										</a>
-									</div>
-									</li>
-								  </ul>
-								<!-- <footer class="major"> -->
-									<!-- <ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul> -->
-								<!-- </footer> -->
-							</section>
-						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<a href = "https://drive.google.com/file/d/10ydCw9lYhS1Sftbcs9yysKq-ruUyqLjH/view?usp=sharing"> <h2> CV</h2> </a>
-									<p></p>
-								</header>
-								<!-- <footer class="major"> -->
-									<!-- <ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul> -->
-								<!-- </footer> -->
-							</section>
+        .header-content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: var(--space-3xl);
+        }
 
+        .profile-image {
+            flex-shrink: 0;
+        }
 
-					</div>
+        .profile-image img {
+            width: 200px;
+            height: 200px;
+            border-radius: var(--radius-full);
+            object-fit: cover;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            box-shadow: var(--shadow-xl);
+        }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<!-- <section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
-							</ul>
-						</section> -->
-						<section>
-							<h2>Naif Alkhunaizi</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>Shahama Road &bull; Masdar City, Abu-Dhabi &bull; UAE</dd>
-								<dt>Phone</dt>
-								<dd>(+971) 54-534-3088</dd>
-								<dt>Email</dt>
-								<dd><a href="#">naif.alkhunaizi@mbzuai.ac.ae</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="https://twitter.com/NAlkhnaizi" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.facebook.com/naif.t.khunaizi/" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/nalkhunaizi" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="https://github.com/Naiftt" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-							</ul>
-						</section>
-						<!-- <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
-					</footer>
+        .profile-info h1 {
+            font-family: var(--font-display);
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: var(--space-sm);
+            line-height: 1.1;
+        }
 
-			</div>
+        .profile-info .title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: var(--space-xs);
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        .profile-info .company {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: var(--space-lg);
+        }
 
-	</body>
+        .upcoming-role {
+            background: rgba(255, 255, 255, 0.15);
+            padding: var(--space-lg);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-lg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .upcoming-role h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: var(--space-xs);
+            color: var(--white);
+        }
+
+        .upcoming-role p {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin: 0;
+        }
+
+        .tagline {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+            max-width: 500px;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: var(--space-2xl);
+            }
+            
+            .profile-image img {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .profile-info h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Navigation */
+        .nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--gray-200);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: center;
+            padding: var(--space-lg) 0;
+        }
+
+        .nav ul {
+            display: flex;
+            list-style: none;
+            gap: var(--space-lg);
+        }
+
+        .nav a {
+            color: var(--gray-600);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            letter-spacing: 0.025em;
+            padding: var(--space-sm) var(--space-lg);
+            border-radius: var(--radius);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav a:hover,
+        .nav a.active {
+            color: var(--primary);
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: var(--space-sm);
+            }
+            
+            .nav a {
+                font-size: 0.8rem;
+                padding: var(--space-xs) var(--space-md);
+            }
+        }
+
+        /* Sections */
+        .section {
+            padding: var(--space-4xl) 0;
+        }
+
+        .section.alt {
+            background: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-3xl);
+        }
+
+        .section-header h2 {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--gray-800);
+            margin-bottom: var(--space-lg);
+        }
+
+        .section-header .divider {
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+            margin: 0 auto var(--space-lg);
+            border-radius: var(--radius-full);
+        }
+
+        .section-header p {
+            font-size: 1.125rem;
+            color: var(--gray-600);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Grid System */
+        .grid {
+            display: grid;
+            gap: var(--space-xl);
+        }
+
+        .grid-2 { grid-template-columns: repeat(2, 1fr); }
+        .grid-3 { grid-template-columns: repeat(3, 1fr); }
+        .grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+        @media (max-width: 768px) {
+            .grid-2,
+            .grid-3,
+            .grid-4 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Cards */
+        .card {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-2xl);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .card-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: var(--white);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-lg);
+            font-size: 1.5rem;
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--gray-800);
+            margin-bottom: var(--space-md);
+        }
+
+        .card p {
+            color: var(--gray-600);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Stats */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-xl);
+            margin: var(--space-3xl) 0;
+        }
+
+        .stat {
+            text-align: center;
+            background: var(--white);
+            padding: var(--space-2xl);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        .stat:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: var(--space-xs);
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--gray-600);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--gray-200);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: var(--space-3xl);
+            padding-left: var(--space-4xl);
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: 21px;
+            top: 8px;
+            width: 18px;
+            height: 18px;
+            background: var(--white);
+            border: 3px solid var(--gray-300);
+            border-radius: var(--radius-full);
+            z-index: 1;
+        }
+
+        .timeline-item.current .timeline-marker {
+            border-color: var(--primary);
+            background: var(--primary);
+        }
+
+        .timeline-content {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-2xl);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        .timeline-content:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        .timeline-header h3 {
+            font-size: 1.375rem;
+            font-weight: 600;
+            color: var(--gray-800);
+            margin-bottom: var(--space-sm);
+        }
+
+        .company-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-lg);
+            flex-wrap: wrap;
+            gap: var(--space-sm);
+        }
+
+        .company {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .period {
+            font-size: 0.875rem;
+            color: var(--gray-500);
+            background: var(--gray-100);
+            padding: var(--space-xs) var(--space-sm);
+            border-radius: var(--radius);
+        }
+
+        .achievements ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .achievements li {
+            position: relative;
+            padding-left: var(--space-xl);
+            margin-bottom: var(--space-md);
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+
+        .achievements li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* Projects */
+        .project-card {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-2xl);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            height: 100%;
+            border-top: 4px solid transparent;
+        }
+
+        .project-card.featured {
+            border-top-color: var(--primary);
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .impact-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--success) 0%, #059669 100%);
+            color: var(--white);
+            padding: var(--space-xs) var(--space-lg);
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: var(--space-lg);
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-xs);
+            margin-top: var(--space-lg);
+        }
+
+        .tag {
+            padding: var(--space-xs) var(--space-sm);
+            background: var(--gray-100);
+            color: var(--gray-600);
+            border-radius: var(--radius);
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-2xl);
+            margin-top: var(--space-3xl);
+        }
+
+        .skill-category h4 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--gray-800);
+            margin-bottom: var(--space-lg);
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-sm);
+        }
+
+        .skill-tag {
+            padding: var(--space-sm) var(--space-lg);
+            background: var(--gray-100);
+            color: var(--gray-700);
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .skill-tag:hover {
+            background: var(--primary);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* Publications */
+        .publication-item {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: var(--space-2xl);
+            margin-bottom: var(--space-xl);
+            box-shadow: var(--shadow-md);
+            border-left: 4px solid var(--accent);
+            transition: var(--transition);
+        }
+
+        .publication-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .publication-item h3 {
+            margin-bottom: var(--space-lg);
+        }
+
+        .publication-item h3 a {
+            color: var(--gray-800);
+            text-decoration: none;
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 1.4;
+            transition: var(--transition);
+        }
+
+        .publication-item h3 a:hover {
+            color: var(--primary);
+        }
+
+        .publication-meta {
+            display: flex;
+            gap: var(--space-lg);
+            margin-bottom: var(--space-lg);
+            flex-wrap: wrap;
+        }
+
+        .venue {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        .pub-type {
+            color: var(--gray-500);
+            font-size: 0.875rem;
+            background: var(--gray-100);
+            padding: var(--space-xs) var(--space-sm);
+            border-radius: var(--radius);
+        }
+
+        /* Contact */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-3xl);
+            align-items: start;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-lg);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .contact-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
+            color: var(--white);
+            border-radius: var(--radius-lg);
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .contact-details h4 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--gray-800);
+            margin-bottom: var(--space-xs);
+        }
+
+        .contact-details a {
+            color: var(--gray-600);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .contact-details a:hover {
+            color: var(--primary);
+        }
+
+        .cv-card {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+            border-radius: var(--radius-xl);
+            padding: var(--space-3xl);
+            text-align: center;
+            box-shadow: var(--shadow-xl);
+            transition: var(--transition);
+        }
+
+        .cv-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(59, 130, 246, 0.3);
+        }
+
+        .cv-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-full);
+            margin-bottom: var(--space-xl);
+            font-size: 2rem;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            background: var(--white);
+            color: var(--primary);
+            padding: var(--space-lg) var(--space-2xl);
+            border-radius: var(--radius-full);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .btn-primary:hover {
+            background: var(--gray-100);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--gray-800);
+            color: var(--white);
+            padding: var(--space-3xl) 0;
+            text-align: center;
+        }
+
+        .footer h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: var(--space-sm);
+        }
+
+        .footer p {
+            color: rgba(255, 255, 255, 0.8);
+            margin: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .section {
+                padding: var(--space-3xl) 0;
+            }
+            
+            .section-header h2 {
+                font-size: 2rem;
+            }
+            
+            .timeline::before {
+                left: 20px;
+            }
+            
+            .timeline-item {
+                padding-left: var(--space-3xl);
+            }
+            
+            .timeline-marker {
+                left: 11px;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-2xl);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="profile-image">
+                    <img src="images/naif_1.jpg" alt="Naif Alkhunaizi" />
+                </div>
+                <div class="profile-info">
+                    <h1>Naif Tayseer Alkhunaizi</h1>
+                    <p class="title">Senior AI & Data Consultant</p>
+                    <p class="company"><span style="color: #F59E0B; font-weight: 700;">Infosys Consulting</span></p>
+                    
+                    <div class="upcoming-role">
+                        <h3><i class="fas fa-rocket"></i> Upcoming Role</h3>
+                        <p><strong style="color: #14B8A6;">Lead AI & Data Consultant</strong> at <span style="color: #14B8A6; font-weight: 600;">Adesso Arabia</span> (Starting Soon)</p>
+                    </div>
+                    
+                    <div class="upcoming-role" style="margin-bottom: var(--space-lg);">
+                        <h3><i class="fas fa-chart-line"></i> Co-founder</h3>
+                        <p><strong><a href="https://www.wazii.net" target="_blank" style="color: #F59E0B; text-decoration: underline;">WaZii</a></strong> - Automated trading platform using sophisticated algorithms</p>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem;">Our ambition is to democratize trading for everyone</p>
+                    </div>
+                    
+                    <p class="tagline">Transforming businesses through strategic AI implementation, delivering measurable impact with cutting-edge solutions and data-driven insights.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <ul>
+                    <li><a href="#about" class="active">About</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#publications">Research</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About</h2>
+                <div class="divider"></div>
+                <p>Senior AI consultant with proven expertise in transforming organizations through strategic AI implementation</p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Strategic AI Leadership</h3>
+                    <p>Leading AI transformation initiatives for clients, defining roadmaps that align technology with business objectives and deliver measurable outcomes.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Privacy-First Solutions</h3>
+                    <p>Specialized in Federated Learning and privacy-preserving ML techniques, ensuring data security while maximizing AI model performance and compliance.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Research & Innovation</h3>
+                    <p>Published researcher with 4+ peer-reviewed papers in top-tier conferences, bridging the gap between cutting-edge research and practical applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Achievements</h2>
+                <div class="divider"></div>
+                <p>Quantifiable impact delivered through innovative AI solutions</p>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">$50M+</div>
+                    <div class="stat-label">Fraud Detected</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number"><i class="fas fa-file-alt"></i></div>
+                    <div class="stat-label">Document Digitalization with RAG Systems</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">4+</div>
+                    <div class="stat-label">Publications</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">2nd</div>
+                    <div class="stat-label">GITEX Runner-Up</div>
+                </div>
+            </div>
+
+            <div class="grid grid-2" style="margin-top: 3rem;">
+                <div class="card">
+                    <h3><i class="fas fa-trophy" style="color: var(--warning); margin-right: 0.5rem;"></i>Professional Recognition</h3>
+                    <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>Runner's Up</strong> - GITEX 2021 Technology Competition</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>2nd Place</strong> - Table Tennis Tournament (30 participants)</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-certificate" style="color: var(--primary); margin-right: 0.5rem;"></i>Certifications</h3>
+                    <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                        <li style="margin-bottom: 0.5rem;">AWS Cloud Practitioner Essentials</li>
+                        <li style="margin-bottom: 0.5rem;">Leading Teams: Developing as a Leader</li>
+                        <li style="margin-bottom: 0.5rem;">Machine Learning in Production (DeepLearning.AI)</li>
+                        <li style="margin-bottom: 0.5rem;">Neural Networks and Deep Learning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Professional Experience</h2>
+                <div class="divider"></div>
+                <p>Progressive career building expertise in AI consulting and implementation</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item current">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior AI Consultant</h3>
+                            <div class="company-info">
+                                <span class="company"><a href="https://infosys.com" target="_blank" style="color: #F59E0B; font-weight: 700; text-decoration: underline;">Infosys Consulting</a></span>
+                                <span class="period">Jan 2025 - Present</span>
+                            </div>
+                        </div>
+                        <div class="achievements">
+                            <ul>
+                                <li>Leading AI strategy and implementation for clients across multiple industries</li>
+                                <li>Building and maintaining strong client relationships as trusted advisor for AI initiatives</li>
+                                <li>Overseeing full lifecycle of AI projects from requirements gathering to deployment</li>
+                                <li>Communicating technical findings to both technical and non-technical stakeholders</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Scientist II</h3>
+                            <div class="company-info">
+                                <span class="company"><a href="https://www.mozn.sa" target="_blank" style="color: var(--primary); text-decoration: underline;">Mozn</a></span>
+                                <span class="period">Feb 2024 - Jan 2025</span>
+                            </div>
+                        </div>
+                        <div class="achievements">
+                            <ul>
+                                <li>Delivered data insights and AI models for clients across diverse industry verticals</li>
+                                <li>Developed automation solutions for manual processes using NLP, CV, and classical ML</li>
+                                <li>Optimized ML model performance and adapted solutions to evolving business requirements</li>
+                                <li>Translated complex technical findings into actionable business recommendations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Co-founder/AI Engineer</h3>
+                            <div class="company-info">
+                                <span class="company"><a href="https://www.wazii.net" target="_blank" style="color: var(--primary); text-decoration: underline;">WaZii</a></span>
+                                <span class="period">Jan 2023 - Present</span>
+                            </div>
+                        </div>
+                        <div class="achievements">
+                            <ul>
+                                <li>Co-founded WaZii, a platform for automated trading to users using sophisticated algorithms</li>
+                                <li>Built algorithmic trading platform with enhanced U.S. stock market prediction accuracy</li>
+                                <li>Implemented full-stack development with modern CI/CD pipelines and deployment strategies</li>
+                                <li>Deployed production ML models with automated daily retraining using MLOps practices</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Researcher/AI Engineer</h3>
+                            <div class="company-info">
+                                <span class="company">MBZUAI</span>
+                                <span class="period">Jan 2023 - Jan 2024</span>
+                            </div>
+                        </div>
+                        <div class="achievements">
+                            <ul>
+                                <li>Conducted ML research and published findings in top-tier international conferences</li>
+                                <li>Performed data cleaning, visualization, and analysis to support research initiatives</li>
+                                <li>Deployed ML systems using integrated MLOps and DevOps best practices</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Graduate Teaching Assistant</h3>
+                            <div class="company-info">
+                                <span class="company"><a href="https://mbzuai.ac.ae" target="_blank" style="color: var(--primary); text-decoration: underline;">MBZUAI</a> - Advanced Machine Learning</span>
+                                <span class="period">Jan 2022 - May 2022</span>
+                            </div>
+                        </div>
+                        <div class="achievements">
+                            <ul>
+                                <li>Facilitated lab sessions to deepen students' understanding of advanced ML concepts</li>
+                                <li>Hosted office hours and answered student questions on complex topics</li>
+                                <li>Supported course delivery for graduate-level machine learning curriculum</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>AI Engineer Intern</h3>
+                            <div class="company-info">
+                                <span class="company"><a href="https://lockheedmartin.com" target="_blank" style="color: var(--primary); text-decoration: underline;">Lockheed Martin</a></span>
+                                <span class="period">Jun 2021 - Aug 2021</span>
+                            </div>
+                        </div>
+                        <div class="achievements">
+                            <ul>
+                                <li>Developed Computer Vision model for enhanced aircraft inspection using lifelong learning methods</li>
+                                <li>Implemented Episodic Memory to prevent catastrophic forgetting with new data distributions</li>
+                                <li>Utilized Agile methodology with daily standouts showing project progress</li>
+                                <li>Project was successfully completed and tested by Lockheed Martin engineers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Analyst</h3>
+                            <div class="company-info">
+                                <span class="company"><a href="https://randschools.com" target="_blank" style="color: var(--primary); text-decoration: underline;">Rand International School</a></span>
+                                <span class="period">Feb 2020 - Oct 2020</span>
+                            </div>
+                        </div>
+                        <div class="achievements">
+                            <ul>
+                                <li>Conducted comprehensive data quality assessments, identifying and rectifying anomalies and inaccuracies</li>
+                                <li>Analyzed market trends and customer behavior using advanced statistical techniques on large datasets</li>
+                                <li>Utilized Python and SQL to extract meaningful insights for data-driven decision-making</li>
+                                <li>Enhanced data integrity resulting in improved accuracy and reliability for analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Undergraduate Teaching Assistant</h3>
+                            <div class="company-info">
+                                <span class="company"><a href="https://asu.edu" target="_blank" style="color: var(--primary); text-decoration: underline;">ASU</a> - Random Signals Analysis</span>
+                                <span class="period">Aug 2019 - Dec 2019</span>
+                            </div>
+                        </div>
+                        <div class="achievements">
+                            <ul>
+                                <li>Answered student questions during office hours</li>
+                                <li>Graded quizzes and marked student assignments</li>
+                                <li>Supported undergraduate students in understanding signal analysis concepts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="section alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Core Expertise</h2>
+                <div class="divider"></div>
+                <p>Comprehensive skill set spanning AI strategy, implementation, and research</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Programming & Frameworks</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Cloud & DevOps</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Amazon SageMaker</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">MLOps</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Nginx</span>
+                        <span class="skill-tag">Linux</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>AI Specializations</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Federated Learning</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Statistical Modeling</span>
+                        <span class="skill-tag">Time Series</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Tools & Platforms</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Dataiku</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">LaTeX</span>
+                        <span class="skill-tag">Conda</span>
+                        <span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">LTspice</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Projects & Impact</h2>
+                <div class="divider"></div>
+                <p>Transformative AI solutions delivering measurable business value</p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="project-card featured">
+                    <div class="impact-badge">$50M+ Impact</div>
+                    <h3>Fraud Detection in Government Bidding</h3>
+                    <p>Led development of AI-powered fraud detection system for governmental client, successfully identifying over $50M in fraudulent bidding activities and significantly improving transparency and compliance in procurement processes.</p>
+                    <div class="project-tags">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Government</span>
+                        <span class="tag">Fraud Detection</span>
+                        <span class="tag">Compliance</span>
+                    </div>
+                </div>
+                <div class="project-card featured">
+                    <div class="impact-badge">Document Digitalization with RAG</div>
+                    <h3>AI Contract Digitalization</h3>
+                    <p>Led comprehensive document digitalization initiatives using advanced NLP and OCR technologies, enabling efficient contract management, search capabilities, and automated analysis workflows.</p>
+                    <div class="project-tags">
+                        <span class="tag">NLP</span>
+                        <span class="tag">OCR</span>
+                        <span class="tag">Digital Transformation</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Legal Case Summarization Engine</h3>
+                    <p>Developed AI-driven system for legal case analysis and summarization, providing intelligent recommendations to assist legal teams in decision-making and documentation review processes.</p>
+                    <div class="project-tags">
+                        <span class="tag">NLP</span>
+                        <span class="tag">Legal Tech</span>
+                        <span class="tag">Summarization</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Budget Forecasting using GFS Code</h3>
+                    <p>Built predictive algorithm for accurate GFS code classification, enabling precise budget estimations and financial planning for government operations and resource allocation.</p>
+                    <div class="project-tags">
+                        <span class="tag">Forecasting</span>
+                        <span class="tag">Government</span>
+                        <span class="tag">Financial Planning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Research Publications</h2>
+                <div class="divider"></div>
+                <p>Contributing to the advancement of AI through peer-reviewed research</p>
+            </div>
+
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div class="publication-item">
+                    <h3><a href="https://arxiv.org/pdf/2306.14638.pdf" target="_blank">Probing the Efficacy of Federated Parameter-Efficient Fine-Tuning of Vision Transformers for Medical Image Classification</a></h3>
+                    <div class="publication-meta">
+                        <span class="venue">DeCaF - MICCAI 2024</span>
+                        <span class="pub-type">Conference Paper</span>
+                    </div>
+                    <p>Advanced federated learning techniques for medical image analysis with privacy preservation, focusing on parameter-efficient fine-tuning of Vision Transformers in healthcare applications.</p>
+                </div>
+
+                <div class="publication-item">
+                    <h3><a href="https://arxiv.org/pdf/2306.14638.pdf" target="_blank">FeSViBS: Federated Split Learning of Vision Transformer with Block Sampling</a></h3>
+                    <div class="publication-meta">
+                        <span class="venue">MICCAI 2023</span>
+                        <span class="pub-type">Conference Paper</span>
+                    </div>
+                    <p>Novel approach to federated learning using Vision Transformers with optimized block sampling techniques for improved efficiency and performance in distributed learning scenarios.</p>
+                </div>
+
+                <div class="publication-item">
+                    <h3><a href="https://github.com/Naiftt/FedSIS" target="_blank">FedSIS: Federated Split Learning with Intermediate Representation Sampling for Privacy-preserving Generalized Face Presentation Attack Detection</a></h3>
+                    <div class="publication-meta">
+                        <span class="venue">IEEE IJCB 2023</span>
+                        <span class="pub-type">Conference Paper</span>
+                    </div>
+                    <p>Privacy-preserving face anti-spoofing solution using federated split learning architecture with intermediate representation sampling for enhanced security and generalization.</p>
+                </div>
+
+                <div class="publication-item">
+                    <h3><a href="https://link.springer.com/chapter/10.1007/978-3-031-16452-1_64" target="_blank">Suppressing Poisoning Attacks on Federated Learning for Medical Imaging</a></h3>
+                    <div class="publication-meta">
+                        <span class="venue">MICCAI 2022</span>
+                        <span class="pub-type">Conference Paper</span>
+                    </div>
+                    <p>Defense mechanisms against adversarial attacks in federated medical imaging systems, ensuring robust and secure learning in healthcare AI applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Let's Connect</h2>
+                <div class="divider"></div>
+                <p>Ready to transform your business with AI? Let's discuss your next project.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:naiftayseer@gmail.com">naiftayseer@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+966545821122">(+966) 54-582-1122</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Riyadh, Saudi Arabia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://linkedin.com/in/naif-alkhunaizi-334009149" target="_blank">Connect with me</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="cv-card">
+                        <div class="cv-icon">
+                            <i class="fas fa-file-download"></i>
+                        </div>
+                        <h3>CV</h3>
+                        <p>Get my complete professional profile and detailed work experience.</p>
+                        <a href="https://drive.google.com/file/d/1J1oF_84niu4dp2bEvuRXVDJqqT_ml02P/view?usp=sharing" target="_blank" class="btn-primary">
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h3>Naif Alkhunaizi</h3>
+            <p>Senior AI & Data Consultant | Transforming businesses through AI innovation</p>
+            <p style="margin-top: 1rem; font-size: 0.875rem;">&copy; 2025 Naif Alkhunaizi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav a');
+            
+            let currentSection = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Add scroll-triggered animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.card, .stat, .timeline-item, .project-card, .publication-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
 </html>
